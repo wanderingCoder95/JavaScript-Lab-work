@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Akhlaq Lab Work</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <div class="bigbox ">
+            <h1>JavaScript Lab Work</h1>
+        </div>
+    </header>
+    <main>
+        <div class="box box1">
+            <h2>Hands-On Activity: Variables & Data Types</h2>
+
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="number">Enter a Number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+
+            <button onclick="displayValues()" class="btn">Submit</button>
+
+            <div id="output1"></div>
+        </div>
+        <div class="box box2">
+            <h2>Hands-on Activity: JavaScript Operators</h2>
+            <button onclick="performOperations()" class="btn">Run Activity</button>
+            <div id="output2"></div>
+        </div>
+        <div class="box box3">
+            <h2>Simple User Profile Form</h2>
+
+            <label for="name1">Enter Your Name:</label>
+            <input type="text" id="name1" placeholder="Your Name">
+            <br>
+            <label for="age1">Enter Your Age:</label>
+            <input type="number" id="age1" placeholder="Your Age">
+
+            <label for="isStudent">Are you a student?</label>
+            <br>
+            <select id="isStudent">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <button onclick="displayProfile()" class="btn">Submit</button>
+
+            <div id="output3"></div>
+        </div>
+        <div class="box box4">
+            <h2>Multiplication Table Generator</h2>
+            <input type="number" id="num1" placeholder="Enter a number">
+            <button onclick="generateTable()" class="btn">Generate Table</button>
+            <div id="output4"></div>
+        </div>
+        <div class="box box5">
+            <h2>Hands-on Activity: JavaScript Control Flow & Loops</h2>
+
+            <label for="number2">Enter a number:</label>
+            <input type="number" id="number2" placeholder="Enter a number">
+            <button onclick="checkEvenOdd()" class="btn">Check Even or Odd</button>
+
+            <button onclick="printNumbers()" class="btn">Print 1 to 10</button>
+            <button onclick="countDown()" class="btn">Count Down 5 to 1</button>
+
+            <div id="output5"></div>
+        </div>
+        <div class="box box6">
+            <h2>Hands-on Activity: JavaScript Functions</h2>
+
+            <label for="num">Enter a Number:</label>
+            <input type="number" id="numeric3" placeholder="Enter a number">
+
+            <button onclick="calculateSquare()" class="btn">Find Square</button>
+            <button onclick="addNumbers()" class="btn">Add Two Numbers</button>
+
+            <div id="output6"></div>
+        </div>
+        <div class="box box7">
+            <h2>Calculator</h2>
+            <input type="number" id="numeric4" placeholder="Enter first number">
+            <input type="number" id="numeric5" placeholder="Enter second number">
+            <select id="operation">
+                <option value="add">Add (+)</option>
+                <option value="subtract">Subtract (-)</option>
+                <option value="multiply">Multiply (×)</option>
+                <option value="divide">Divide (÷)</option>
+            </select>
+
+            <button onclick="calculate()" class="btn">Calculate</button>
+
+            <div id="output7"></div>
+        </div>
+        <div class="box box8">
+            <h2>Dynamic Color Mixer 🎨</h2>
+
+            <label for="red">Red: <span id="redValue" class="color-value">0</span></label><br>
+            <input type="range" id="red" class="slider" min="0" max="255" value="0" oninput="updateColor()"><br>
+
+            <label for="green">Green: <span id="greenValue" class="color-value">0</span></label><br>
+            <input type="range" id="green" class="slider" min="0" max="255" value="0" oninput="updateColor()"><br>
+
+            <label for="blue">Blue: <span id="blueValue" class="color-value">0</span></label><br>
+            <input type="range" id="blue" class="slider" min="0" max="255" value="0" oninput="updateColor()"><br>
+
+            <div id="colorBox"></div>
+        </div>
+        <div class="box box9">
+            <h2>JavaScript Event Handling</h2>
+
+            <!-- Task 1: Button Click Event -->
+            <h3>Task 1: Click the Button to Change Color</h3>
+            <button id="colorbutton" class="btn">Click Me!</button>
+
+            <!-- Task 2: Keyboard Event -->
+            <h3>Task 2: Press Keys in the Input Field</h3>
+            <input type="text" id="keyLogger" placeholder="Type something...">
+            <p>Check the console for logged keys.</p>
+            <h3>Task 3: Form Submission</h3>
+            <form id="myForm">
+                <input type="text" placeholder="Enter your name">
+                <button type="submit" class="btn">Submit Form</button>
+            </form>
+        </div>
+        <div class="box box10">
+            <h2>Register Now 🚀</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name5">
+                    <span class="error" id="nameError">❌ Name is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <span class="error" id="emailError">❌ Enter a valid email</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                    <span class="error" id="passwordError">❌ Must be 6+ characters</span>
+                </div>
+                <button type="submit" class="btn">Register ✅</button>
+            </form>
+            <div class="success" id="successMessage">✔ Form Submitted Successfully!</div>
+            <div class="popup" id="popup">
+                <h2>🎉 Registration Successful! 🎊</h2>
+                <p>Thank you for signing up!</p>
+                <button onclick="closePopup()" class="btn">Close</button>
+            </div>
+        </div>
+        </div>
+        <div class="box box11">
+            <h2>Interactive Counter App</h2>
+
+            <!-- Counter Display -->
+            <div id="counter">0</div>
+
+            <!-- Buttons -->
+            <div class="button-box">
+                <button class="increase" onclick="increaseCounter()" class="btn">Increase</button>
+                <button class="decrease" onclick="decreaseCounter()" class="btn">Decrease</button>
+                <button class="reset" onclick="resetCounter()" class="btn">Reset</button>
+            </div>
+        </div>
+        <div class="box box12">
+            <h2>Show & Hide Password</h2>
+
+            <!-- Password Input Field -->
+            <input type="password" id="newpassword" placeholder="Enter your password">
+            <button onclick="togglePassword()" class="btn">Show Password</button>
+        </div>
+
+        <div class="box box13">
+            <h2>Real-Time Digital Clock ⏰</h2>
+
+            <!-- Clock Display -->
+            <div id="clock">00:00:00</div>
+
+            <!-- Start/Stop Button -->
+            <button id="toggleClock">Start Clock</button>
+        </div>
+
+        <div class="box box14">
+            <h2>🌟 Leave Your Feedback</h2>
+            <input type="text" id="names" placeholder="Your Name">
+            <select id="rating">
+                <option value="">Rate us</option>
+                <option value="⭐">⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            </select>
+            <textarea id="feedback" rows="4" placeholder="Your feedback..."></textarea>
+            <button onclick="submitFeedback()">Submit</button>
+            <div id="feedbackList"></div>
+        </div>
+
+        <div class="box box15">
+            <h2>Quote Generator</h2>
+            <div class="quote" id="quote">"The best way to get started is to quit talking and begin doing."</div>
+            <div class="author" id="author">- Walt Disney</div>
+            <button onclick="generateQuote()">✨ New Quote</button>
+        </div>
+        <div class="box box16">
+            <h2>📝 Task Manager</h2>
+            <div>
+                <input type="text" id="taskInput" placeholder="Enter your task here..." />
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="box box17">
+            <h2>DOM Manipulation</h2>
+            <h3 id="domHeading">Welcome!</h3>
+            <button onclick="changeHeading()">Change Heading</button>
+            <button onclick="addNewParagraph()">Add Paragraph</button>
+            <button onclick="toggleDark()" id="changeMode">Toggle Mode 🌙</button>
+            <div id="domContent"></div>
+        </div>
+        <div class="box box18">
+            <h2>👋 Welcome to Our Site!</h2>
+            <input type="text" id="userName" placeholder="Enter your name" />
+            <br>
+            <button onclick="storeName()">Submit</button>
+            <div id="welcomeMessage"></div>
+        </div>
+
+        <div class="box box19">
+            <h2>📝 My Notes</h2>
+            <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+            <br>
+            <button id="saveBtn" onclick="saveNote()">Save Note</button>
+            <button id="clearBtn" onclick="clearNote()">Clear Note</button>
+            <div id="displayNote"></div>
+        </div>
+
+        <div class="box box20">
+            <h2>📓 Daily Journal</h2>
+            <textarea id="journalEntry" placeholder="Write something about your day..."></textarea>
+            <button onclick="saveEntry()">Save Entry</button>
+
+            <div id="entries"></div>
+        </div>
+
+        <div class="box box21">
+            <h2>Light Bulb toggle</h2>
+            <img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" >
+            <p>Click the light bulb to turn on/off the light.</p>
+        </div>
+    </main>
+
+    <footer>
+        <span>Made with ❤️</span>
+        <span>By Farhan Akhlaq</span>
+        <span>Copyright © Farhan Akhlaq 2025</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
